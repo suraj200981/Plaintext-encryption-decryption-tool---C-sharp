@@ -28,8 +28,11 @@ namespace CiphersInterface
 
         private void btnEncode_Click(object sender, EventArgs e)
         {
+
+            
+
             var caesar = new Caesar();
-            var encodedPlaintext = caesar.Encode("hello", 3);
+            var encodedPlaintext = caesar.Encode(inputTextBoxCeasar.Text, (int)keySelector.Value);
 
             outputText.Visible = true;
             btnOutputCopy.Visible = true;
