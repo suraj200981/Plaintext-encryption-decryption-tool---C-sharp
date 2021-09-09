@@ -44,14 +44,15 @@ namespace CiphersWindowsApp
 
         public string bruteForce(string inputStr)
         {
+            var sb = new StringBuilder();
 
-            /*   for (int i = 1; i <= 26; i++){
-                   Console.WriteLine(Encode(inputStr,i));
-                   Console.WriteLine("");
-                   Console.WriteLine("");
+              for (int i = 1; i <= 26; i++){
+                   sb.Append(Decode(inputStr,i)+"    with key: "+ i);
+                   sb.AppendLine("");
+                   sb.AppendLine("");
+            }
 
-               }*/
-            return "poo";
+            return sb.ToString();
 
         }
 

@@ -153,6 +153,7 @@ namespace CiphersInterface
             this.btnAutosolve.TabIndex = 8;
             this.btnAutosolve.Text = "Auto Solve (without key)";
             this.btnAutosolve.UseVisualStyleBackColor = false;
+            this.btnAutosolve.Click += new System.EventHandler(this.btnAutosolve_Click);
             // 
             // btnInstructions
             // 

@@ -64,5 +64,18 @@ namespace CiphersInterface
 
             outputText.Text = decodedPlaintext;
         }
+
+        private void btnAutosolve_Click(object sender, EventArgs e)
+        {
+            var caesar = new Caesar();
+            var autoSolveResults = caesar.bruteForce(inputTextBoxCeasar.Text);
+
+            outputText.Visible = true;
+            btnOutputCopy.Visible = true;
+            btnOutputTextOps.Visible = true;
+
+            outputText.Text = autoSolveResults;
+        }
     }
-}
+    }
+
