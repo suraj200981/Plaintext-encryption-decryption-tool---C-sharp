@@ -76,6 +76,75 @@ namespace CiphersInterface
 
             outputText.Text = autoSolveResults;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+
+            if (inputTextBoxCeasar.Text.Equals("")) {
+
+                MessageBox.Show("You cannot change the text options without entering any text!", "Warning",
+                 MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else {
+                btnCaesarInputPaste.Visible = false;
+                button1.Visible = false;
+                button3.Visible = false;
+
+                //show the text options
+                btnHideTextOptions.Visible = true;
+                btnRemoveSpaces.Visible = true;
+                btnLettersOnly.Visible = true;
+                btnReverse.Visible = true;
+                btnUpper.Visible = true;
+                btnLower.Visible = true;
+                btnUndo.Visible = true;
+                btn5Groups.Visible = true;
+
+
+                //orignal string before text option modifications
+                var caesar = new Caesar();
+                caesar.undoInput = inputTextBoxCeasar.Text;
+            }
+        }
+
+        private void btnHideTextOptions_Click(object sender, EventArgs e)
+        {
+            button1.Visible = true;
+            btnCaesarInputPaste.Visible = true;
+            button3.Visible = true;
+
+            //hide the text options
+            btnHideTextOptions.Visible = false;
+            btnRemoveSpaces.Visible = false;
+            btnLettersOnly.Visible = false;
+            btnReverse.Visible = false;
+            btnUpper.Visible = false;
+            btnLower.Visible = false;
+            btnUndo.Visible = false;
+            btn5Groups.Visible = false;
+
+        }
+
+        private void btnRemoveSpaces_Click(object sender, EventArgs e)
+        {
+
+            var originalText = inputTextBoxCeasar.Text;
+            var caesar = new Caesar();
+            var whiteSpacesRemoved = caesar.removeSpaces(inputTextBoxCeasar.Text);
+
+            inputTextBoxCeasar.Text = whiteSpacesRemoved;
+        }
+
+        private void btnUndo_Click(object sender, EventArgs e)
+        {
+
+            //orignal string before text option modifications
+            var caesar = new Caesar();
+            inputTextBoxCeasar.Text = caesar.undoInput;
+
+
+        }
     }
     }
 

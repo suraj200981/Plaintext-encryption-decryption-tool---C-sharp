@@ -9,6 +9,8 @@ namespace CiphersWindowsApp
     public class Caesar
     {
 
+        public string undoInput = "";
+
         public string Encode(string inputStr, int shiftKey)
         {
             Console.Write("Original Cipher: " + inputStr);
@@ -41,22 +43,6 @@ namespace CiphersWindowsApp
             }
             return sb.ToString();
         }
-
-        public string bruteForce(string inputStr)
-        {
-            var sb = new StringBuilder();
-
-              for (int i = 1; i <= 26; i++){
-                   sb.Append(Decode(inputStr,i)+"    with key: "+ i);
-                   sb.AppendLine("");
-                   sb.AppendLine("");
-            }
-
-            return sb.ToString();
-
-        }
-
-
 
         public string Decode(string inputStr, int shiftKey)
         {
@@ -93,7 +79,30 @@ namespace CiphersWindowsApp
             return sb.ToString();
         }
 
+        public string bruteForce(string inputStr)
+        {
+            var sb = new StringBuilder();
 
-    
+            for (int i = 1; i <= 26; i++)
+            {
+                sb.Append(Decode(inputStr, i) + "    with key: " + i);
+                sb.AppendLine("");
+                sb.AppendLine("");
+            }
+
+            return sb.ToString();
+
+        }
+
+
+        public string removeSpaces(string inputStr)
+        {
+            return String.Concat(inputStr.Where(c => !Char.IsWhiteSpace(c)));
+
+        }
+
+
+
+
     }
 }

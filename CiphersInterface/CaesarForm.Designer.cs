@@ -43,6 +43,14 @@ namespace CiphersInterface
             this.btnOutputCopy = new System.Windows.Forms.Button();
             this.btnOutputTextOps = new System.Windows.Forms.Button();
             this.btnBackToMenu = new System.Windows.Forms.Button();
+            this.btnHideTextOptions = new System.Windows.Forms.Button();
+            this.btnUndo = new System.Windows.Forms.Button();
+            this.btn5Groups = new System.Windows.Forms.Button();
+            this.btnLower = new System.Windows.Forms.Button();
+            this.btnUpper = new System.Windows.Forms.Button();
+            this.btnReverse = new System.Windows.Forms.Button();
+            this.btnLettersOnly = new System.Windows.Forms.Button();
+            this.btnRemoveSpaces = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.keySelector)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,6 +111,7 @@ namespace CiphersInterface
             this.button3.TabIndex = 4;
             this.button3.Text = "Text Options...";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // keySelector
             // 
@@ -214,11 +223,126 @@ namespace CiphersInterface
             this.btnBackToMenu.UseVisualStyleBackColor = false;
             this.btnBackToMenu.Click += new System.EventHandler(this.btnBackToMenu_Click);
             // 
+            // btnHideTextOptions
+            // 
+            this.btnHideTextOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnHideTextOptions.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHideTextOptions.ForeColor = System.Drawing.Color.White;
+            this.btnHideTextOptions.Location = new System.Drawing.Point(587, 240);
+            this.btnHideTextOptions.Name = "btnHideTextOptions";
+            this.btnHideTextOptions.Size = new System.Drawing.Size(62, 36);
+            this.btnHideTextOptions.TabIndex = 14;
+            this.btnHideTextOptions.Text = "Hide";
+            this.btnHideTextOptions.UseVisualStyleBackColor = false;
+            this.btnHideTextOptions.Visible = false;
+            this.btnHideTextOptions.Click += new System.EventHandler(this.btnHideTextOptions_Click);
+            // 
+            // btnUndo
+            // 
+            this.btnUndo.BackColor = System.Drawing.Color.Green;
+            this.btnUndo.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUndo.ForeColor = System.Drawing.Color.White;
+            this.btnUndo.Location = new System.Drawing.Point(587, 198);
+            this.btnUndo.Name = "btnUndo";
+            this.btnUndo.Size = new System.Drawing.Size(62, 36);
+            this.btnUndo.TabIndex = 15;
+            this.btnUndo.Text = "Undo";
+            this.btnUndo.UseVisualStyleBackColor = false;
+            this.btnUndo.Visible = false;
+            this.btnUndo.Click += new System.EventHandler(this.btnUndo_Click);
+            // 
+            // btn5Groups
+            // 
+            this.btn5Groups.BackColor = System.Drawing.Color.Green;
+            this.btn5Groups.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5Groups.ForeColor = System.Drawing.Color.White;
+            this.btn5Groups.Location = new System.Drawing.Point(492, 198);
+            this.btn5Groups.Name = "btn5Groups";
+            this.btn5Groups.Size = new System.Drawing.Size(89, 36);
+            this.btn5Groups.TabIndex = 16;
+            this.btn5Groups.Text = "5-groups";
+            this.btn5Groups.UseVisualStyleBackColor = false;
+            this.btn5Groups.Visible = false;
+            // 
+            // btnLower
+            // 
+            this.btnLower.BackColor = System.Drawing.Color.Green;
+            this.btnLower.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLower.ForeColor = System.Drawing.Color.White;
+            this.btnLower.Location = new System.Drawing.Point(419, 198);
+            this.btnLower.Name = "btnLower";
+            this.btnLower.Size = new System.Drawing.Size(67, 36);
+            this.btnLower.TabIndex = 17;
+            this.btnLower.Text = "Lower";
+            this.btnLower.UseVisualStyleBackColor = false;
+            this.btnLower.Visible = false;
+            // 
+            // btnUpper
+            // 
+            this.btnUpper.BackColor = System.Drawing.Color.Green;
+            this.btnUpper.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpper.ForeColor = System.Drawing.Color.White;
+            this.btnUpper.Location = new System.Drawing.Point(346, 198);
+            this.btnUpper.Name = "btnUpper";
+            this.btnUpper.Size = new System.Drawing.Size(67, 36);
+            this.btnUpper.TabIndex = 18;
+            this.btnUpper.Text = "Upper";
+            this.btnUpper.UseVisualStyleBackColor = false;
+            this.btnUpper.Visible = false;
+            // 
+            // btnReverse
+            // 
+            this.btnReverse.BackColor = System.Drawing.Color.Green;
+            this.btnReverse.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReverse.ForeColor = System.Drawing.Color.White;
+            this.btnReverse.Location = new System.Drawing.Point(268, 198);
+            this.btnReverse.Name = "btnReverse";
+            this.btnReverse.Size = new System.Drawing.Size(72, 36);
+            this.btnReverse.TabIndex = 19;
+            this.btnReverse.Text = "Reverse";
+            this.btnReverse.UseVisualStyleBackColor = false;
+            this.btnReverse.Visible = false;
+            // 
+            // btnLettersOnly
+            // 
+            this.btnLettersOnly.BackColor = System.Drawing.Color.Green;
+            this.btnLettersOnly.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLettersOnly.ForeColor = System.Drawing.Color.White;
+            this.btnLettersOnly.Location = new System.Drawing.Point(158, 198);
+            this.btnLettersOnly.Name = "btnLettersOnly";
+            this.btnLettersOnly.Size = new System.Drawing.Size(104, 36);
+            this.btnLettersOnly.TabIndex = 20;
+            this.btnLettersOnly.Text = "Letters only";
+            this.btnLettersOnly.UseVisualStyleBackColor = false;
+            this.btnLettersOnly.Visible = false;
+            // 
+            // btnRemoveSpaces
+            // 
+            this.btnRemoveSpaces.BackColor = System.Drawing.Color.Green;
+            this.btnRemoveSpaces.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveSpaces.ForeColor = System.Drawing.Color.White;
+            this.btnRemoveSpaces.Location = new System.Drawing.Point(32, 198);
+            this.btnRemoveSpaces.Name = "btnRemoveSpaces";
+            this.btnRemoveSpaces.Size = new System.Drawing.Size(125, 36);
+            this.btnRemoveSpaces.TabIndex = 21;
+            this.btnRemoveSpaces.Text = "Remove Spaces";
+            this.btnRemoveSpaces.UseVisualStyleBackColor = false;
+            this.btnRemoveSpaces.Visible = false;
+            this.btnRemoveSpaces.Click += new System.EventHandler(this.btnRemoveSpaces_Click);
+            // 
             // CaesarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(701, 530);
+            this.Controls.Add(this.btnRemoveSpaces);
+            this.Controls.Add(this.btnLettersOnly);
+            this.Controls.Add(this.btnReverse);
+            this.Controls.Add(this.btnUpper);
+            this.Controls.Add(this.btnLower);
+            this.Controls.Add(this.btn5Groups);
+            this.Controls.Add(this.btnUndo);
+            this.Controls.Add(this.btnHideTextOptions);
             this.Controls.Add(this.btnBackToMenu);
             this.Controls.Add(this.btnOutputTextOps);
             this.Controls.Add(this.btnOutputCopy);
@@ -257,5 +381,13 @@ namespace CiphersInterface
         private System.Windows.Forms.Button btnOutputCopy;
         private System.Windows.Forms.Button btnOutputTextOps;
         private System.Windows.Forms.Button btnBackToMenu;
+        private System.Windows.Forms.Button btnHideTextOptions;
+        private System.Windows.Forms.Button btnUndo;
+        private System.Windows.Forms.Button btn5Groups;
+        private System.Windows.Forms.Button btnLower;
+        private System.Windows.Forms.Button btnUpper;
+        private System.Windows.Forms.Button btnReverse;
+        private System.Windows.Forms.Button btnLettersOnly;
+        private System.Windows.Forms.Button btnRemoveSpaces;
     }
 }
