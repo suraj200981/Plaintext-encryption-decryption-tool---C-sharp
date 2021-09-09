@@ -46,5 +46,23 @@ namespace CiphersInterface
         {
             System.Windows.Forms.Clipboard.SetText(inputTextBoxCeasar.Text);
         }
+
+        private void btnCaesarInputPaste_Click(object sender, EventArgs e)
+        {
+           inputTextBoxCeasar.Text = System.Windows.Forms.Clipboard.GetText();
+
+        }
+
+        private void btnDecode_Click(object sender, EventArgs e)
+        {
+            var caesar = new Caesar();
+            var decodedPlaintext = caesar.Decode(inputTextBoxCeasar.Text, (int)keySelector.Value);
+
+            outputText.Visible = true;
+            btnOutputCopy.Visible = true;
+            btnOutputTextOps.Visible = true;
+
+            outputText.Text = decodedPlaintext;
+        }
     }
 }

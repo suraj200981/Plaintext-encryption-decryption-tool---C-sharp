@@ -32,7 +32,7 @@ namespace CiphersInterface
             this.label1 = new System.Windows.Forms.Label();
             this.inputTextBoxCeasar = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCaesarInputPaste = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.keySelector = new System.Windows.Forms.NumericUpDown();
             this.btnDecode = new System.Windows.Forms.Button();
@@ -79,17 +79,18 @@ namespace CiphersInterface
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnCaesarInputPaste
             // 
-            this.button2.BackColor = System.Drawing.Color.Green;
-            this.button2.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(108, 198);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(70, 36);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Paste";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnCaesarInputPaste.BackColor = System.Drawing.Color.Green;
+            this.btnCaesarInputPaste.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCaesarInputPaste.ForeColor = System.Drawing.Color.White;
+            this.btnCaesarInputPaste.Location = new System.Drawing.Point(108, 198);
+            this.btnCaesarInputPaste.Name = "btnCaesarInputPaste";
+            this.btnCaesarInputPaste.Size = new System.Drawing.Size(70, 36);
+            this.btnCaesarInputPaste.TabIndex = 3;
+            this.btnCaesarInputPaste.Text = "Paste";
+            this.btnCaesarInputPaste.UseVisualStyleBackColor = false;
+            this.btnCaesarInputPaste.Click += new System.EventHandler(this.btnCaesarInputPaste_Click);
             // 
             // button3
             // 
@@ -126,6 +127,7 @@ namespace CiphersInterface
             this.btnDecode.TabIndex = 6;
             this.btnDecode.Text = "Decode";
             this.btnDecode.UseVisualStyleBackColor = false;
+            this.btnDecode.Click += new System.EventHandler(this.btnDecode_Click);
             // 
             // btnEncode
             // 
@@ -226,7 +228,7 @@ namespace CiphersInterface
             this.Controls.Add(this.btnDecode);
             this.Controls.Add(this.keySelector);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnCaesarInputPaste);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.inputTextBoxCeasar);
             this.Controls.Add(this.label1);
@@ -243,7 +245,7 @@ namespace CiphersInterface
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox inputTextBoxCeasar;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCaesarInputPaste;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.NumericUpDown keySelector;
         private System.Windows.Forms.Button btnDecode;

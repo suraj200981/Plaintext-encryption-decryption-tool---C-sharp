@@ -42,6 +42,21 @@ namespace CiphersWindowsApp
             return sb.ToString();
         }
 
+        public string bruteForce(string inputStr)
+        {
+
+            /*   for (int i = 1; i <= 26; i++){
+                   Console.WriteLine(Encode(inputStr,i));
+                   Console.WriteLine("");
+                   Console.WriteLine("");
+
+               }*/
+            return "poo";
+
+        }
+
+
+
         public string Decode(string inputStr, int shiftKey)
         {
             int newKey = 26 - (shiftKey % 26);
@@ -74,7 +89,10 @@ namespace CiphersWindowsApp
                 }
 
             }
-            return "Decoded as: " + sb;
+            return sb.ToString();
         }
+
+
+    
     }
 }
