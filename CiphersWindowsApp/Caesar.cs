@@ -9,7 +9,6 @@ namespace CiphersWindowsApp
     public class Caesar
     {
 
-        public string undoInput = "";
 
         public string Encode(string inputStr, int shiftKey)
         {

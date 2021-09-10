@@ -13,9 +13,14 @@ namespace CiphersInterface
 {
     public partial class CaesarForm : Form
     {
+
+        public string undoInput;
+
         public CaesarForm()
         {
-            InitializeComponent();
+
+        InitializeComponent();
+            undoInput = "";
         }
 
         private void btnBackToMenu_Click(object sender, EventArgs e)
@@ -103,8 +108,7 @@ namespace CiphersInterface
 
 
                 //orignal string before text option modifications
-                var caesar = new Caesar();
-                caesar.undoInput = inputTextBoxCeasar.Text;
+                undoInput = inputTextBoxCeasar.Text;
             }
         }
 
@@ -140,8 +144,7 @@ namespace CiphersInterface
         {
 
             //orignal string before text option modifications
-            var caesar = new Caesar();
-            inputTextBoxCeasar.Text = caesar.undoInput;
+            inputTextBoxCeasar.Text = undoInput;
 
 
         }
