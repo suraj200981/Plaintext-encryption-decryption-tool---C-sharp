@@ -193,6 +193,24 @@ namespace CiphersInterface
             inputTextBoxCeasar.Text = sb.ToString();
 
         }
+
+        private void btnUpper_Click(object sender, EventArgs e)
+        {
+            inputTextBoxCeasar.Text = inputTextBoxCeasar.Text.ToUpper();
+        }
+
+        private void btnLower_Click(object sender, EventArgs e)
+        {
+            inputTextBoxCeasar.Text = inputTextBoxCeasar.Text.ToLower();
+
+        }
+
+        private void btn5Groups_Click(object sender, EventArgs e)
+        {
+            string str = inputTextBoxCeasar.Text;
+
+            for
+        }
     }
     }
 

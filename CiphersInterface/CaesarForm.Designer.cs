@@ -280,6 +280,7 @@ namespace CiphersInterface
             this.btn5Groups.Text = "5-groups";
             this.btn5Groups.UseVisualStyleBackColor = false;
             this.btn5Groups.Visible = false;
+            this.btn5Groups.Click += new System.EventHandler(this.btn5Groups_Click);
             // 
             // btnLower
             // 
@@ -294,6 +295,7 @@ namespace CiphersInterface
             this.btnLower.Text = "Lower";
             this.btnLower.UseVisualStyleBackColor = false;
             this.btnLower.Visible = false;
+            this.btnLower.Click += new System.EventHandler(this.btnLower_Click);
             // 
             // btnUpper
             // 
@@ -308,6 +310,7 @@ namespace CiphersInterface
             this.btnUpper.Text = "Upper";
             this.btnUpper.UseVisualStyleBackColor = false;
             this.btnUpper.Visible = false;
+            this.btnUpper.Click += new System.EventHandler(this.btnUpper_Click);
             // 
             // btnReverse
             // 
