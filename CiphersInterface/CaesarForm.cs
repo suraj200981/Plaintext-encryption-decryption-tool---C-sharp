@@ -176,6 +176,23 @@ namespace CiphersInterface
             inputTextBoxCeasar.Text = sb.ToString();
 
         }
+
+        private void btnReverse_Click(object sender, EventArgs e)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            char[] arrayOfChars = inputTextBoxCeasar.Text.ToCharArray();
+
+            Array.Reverse(arrayOfChars);
+
+            for (int x = 0; x < arrayOfChars.Length; x++) {
+
+                sb.Append(arrayOfChars[x]);
+            }
+
+            inputTextBoxCeasar.Text = sb.ToString();
+
+        }
     }
     }
 

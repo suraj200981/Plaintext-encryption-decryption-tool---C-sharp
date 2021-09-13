@@ -70,7 +70,7 @@ namespace CiphersInterface
             this.inputTextBoxCeasar.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputTextBoxCeasar.ForeColor = System.Drawing.SystemColors.GrayText;
             this.inputTextBoxCeasar.Location = new System.Drawing.Point(43, 100);
-            this.inputTextBoxCeasar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.inputTextBoxCeasar.Margin = new System.Windows.Forms.Padding(4);
             this.inputTextBoxCeasar.Name = "inputTextBoxCeasar";
             this.inputTextBoxCeasar.Size = new System.Drawing.Size(821, 136);
             this.inputTextBoxCeasar.TabIndex = 1;
@@ -82,7 +82,7 @@ namespace CiphersInterface
             this.button1.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(43, 244);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(93, 44);
             this.button1.TabIndex = 2;
@@ -96,7 +96,7 @@ namespace CiphersInterface
             this.btnCaesarInputPaste.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCaesarInputPaste.ForeColor = System.Drawing.Color.White;
             this.btnCaesarInputPaste.Location = new System.Drawing.Point(144, 244);
-            this.btnCaesarInputPaste.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCaesarInputPaste.Margin = new System.Windows.Forms.Padding(4);
             this.btnCaesarInputPaste.Name = "btnCaesarInputPaste";
             this.btnCaesarInputPaste.Size = new System.Drawing.Size(93, 44);
             this.btnCaesarInputPaste.TabIndex = 3;
@@ -110,7 +110,7 @@ namespace CiphersInterface
             this.button3.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(245, 244);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(171, 44);
             this.button3.TabIndex = 4;
@@ -121,7 +121,7 @@ namespace CiphersInterface
             // keySelector
             // 
             this.keySelector.Location = new System.Drawing.Point(43, 308);
-            this.keySelector.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.keySelector.Margin = new System.Windows.Forms.Padding(4);
             this.keySelector.Maximum = new decimal(new int[] {
             26,
             0,
@@ -137,7 +137,7 @@ namespace CiphersInterface
             this.btnDecode.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDecode.ForeColor = System.Drawing.Color.White;
             this.btnDecode.Location = new System.Drawing.Point(43, 351);
-            this.btnDecode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDecode.Margin = new System.Windows.Forms.Padding(4);
             this.btnDecode.Name = "btnDecode";
             this.btnDecode.Size = new System.Drawing.Size(93, 44);
             this.btnDecode.TabIndex = 6;
@@ -151,7 +151,7 @@ namespace CiphersInterface
             this.btnEncode.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEncode.ForeColor = System.Drawing.Color.White;
             this.btnEncode.Location = new System.Drawing.Point(144, 351);
-            this.btnEncode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEncode.Margin = new System.Windows.Forms.Padding(4);
             this.btnEncode.Name = "btnEncode";
             this.btnEncode.Size = new System.Drawing.Size(93, 44);
             this.btnEncode.TabIndex = 7;
@@ -165,7 +165,7 @@ namespace CiphersInterface
             this.btnAutosolve.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAutosolve.ForeColor = System.Drawing.Color.White;
             this.btnAutosolve.Location = new System.Drawing.Point(245, 351);
-            this.btnAutosolve.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAutosolve.Margin = new System.Windows.Forms.Padding(4);
             this.btnAutosolve.Name = "btnAutosolve";
             this.btnAutosolve.Size = new System.Drawing.Size(296, 44);
             this.btnAutosolve.TabIndex = 8;
@@ -179,7 +179,7 @@ namespace CiphersInterface
             this.btnInstructions.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInstructions.ForeColor = System.Drawing.Color.White;
             this.btnInstructions.Location = new System.Drawing.Point(549, 351);
-            this.btnInstructions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInstructions.Margin = new System.Windows.Forms.Padding(4);
             this.btnInstructions.Name = "btnInstructions";
             this.btnInstructions.Size = new System.Drawing.Size(152, 44);
             this.btnInstructions.TabIndex = 9;
@@ -189,7 +189,7 @@ namespace CiphersInterface
             // outputText
             // 
             this.outputText.Location = new System.Drawing.Point(43, 417);
-            this.outputText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.outputText.Margin = new System.Windows.Forms.Padding(4);
             this.outputText.Name = "outputText";
             this.outputText.Size = new System.Drawing.Size(821, 90);
             this.outputText.TabIndex = 10;
@@ -202,7 +202,7 @@ namespace CiphersInterface
             this.btnOutputCopy.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOutputCopy.ForeColor = System.Drawing.Color.White;
             this.btnOutputCopy.Location = new System.Drawing.Point(43, 516);
-            this.btnOutputCopy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOutputCopy.Margin = new System.Windows.Forms.Padding(4);
             this.btnOutputCopy.Name = "btnOutputCopy";
             this.btnOutputCopy.Size = new System.Drawing.Size(93, 44);
             this.btnOutputCopy.TabIndex = 11;
@@ -216,7 +216,7 @@ namespace CiphersInterface
             this.btnOutputTextOps.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOutputTextOps.ForeColor = System.Drawing.Color.White;
             this.btnOutputTextOps.Location = new System.Drawing.Point(144, 516);
-            this.btnOutputTextOps.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOutputTextOps.Margin = new System.Windows.Forms.Padding(4);
             this.btnOutputTextOps.Name = "btnOutputTextOps";
             this.btnOutputTextOps.Size = new System.Drawing.Size(171, 44);
             this.btnOutputTextOps.TabIndex = 12;
@@ -229,7 +229,7 @@ namespace CiphersInterface
             this.btnBackToMenu.BackColor = System.Drawing.Color.OldLace;
             this.btnBackToMenu.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBackToMenu.Location = new System.Drawing.Point(729, 580);
-            this.btnBackToMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBackToMenu.Margin = new System.Windows.Forms.Padding(4);
             this.btnBackToMenu.Name = "btnBackToMenu";
             this.btnBackToMenu.Size = new System.Drawing.Size(175, 46);
             this.btnBackToMenu.TabIndex = 13;
@@ -243,7 +243,7 @@ namespace CiphersInterface
             this.btnHideTextOptions.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHideTextOptions.ForeColor = System.Drawing.Color.White;
             this.btnHideTextOptions.Location = new System.Drawing.Point(783, 295);
-            this.btnHideTextOptions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHideTextOptions.Margin = new System.Windows.Forms.Padding(4);
             this.btnHideTextOptions.Name = "btnHideTextOptions";
             this.btnHideTextOptions.Size = new System.Drawing.Size(83, 44);
             this.btnHideTextOptions.TabIndex = 14;
@@ -258,7 +258,7 @@ namespace CiphersInterface
             this.btnUndo.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUndo.ForeColor = System.Drawing.Color.White;
             this.btnUndo.Location = new System.Drawing.Point(783, 244);
-            this.btnUndo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUndo.Margin = new System.Windows.Forms.Padding(4);
             this.btnUndo.Name = "btnUndo";
             this.btnUndo.Size = new System.Drawing.Size(83, 44);
             this.btnUndo.TabIndex = 15;
@@ -273,7 +273,7 @@ namespace CiphersInterface
             this.btn5Groups.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5Groups.ForeColor = System.Drawing.Color.White;
             this.btn5Groups.Location = new System.Drawing.Point(656, 244);
-            this.btn5Groups.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn5Groups.Margin = new System.Windows.Forms.Padding(4);
             this.btn5Groups.Name = "btn5Groups";
             this.btn5Groups.Size = new System.Drawing.Size(119, 44);
             this.btn5Groups.TabIndex = 16;
@@ -287,7 +287,7 @@ namespace CiphersInterface
             this.btnLower.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLower.ForeColor = System.Drawing.Color.White;
             this.btnLower.Location = new System.Drawing.Point(559, 244);
-            this.btnLower.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLower.Margin = new System.Windows.Forms.Padding(4);
             this.btnLower.Name = "btnLower";
             this.btnLower.Size = new System.Drawing.Size(89, 44);
             this.btnLower.TabIndex = 17;
@@ -301,7 +301,7 @@ namespace CiphersInterface
             this.btnUpper.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpper.ForeColor = System.Drawing.Color.White;
             this.btnUpper.Location = new System.Drawing.Point(461, 244);
-            this.btnUpper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpper.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpper.Name = "btnUpper";
             this.btnUpper.Size = new System.Drawing.Size(89, 44);
             this.btnUpper.TabIndex = 18;
@@ -315,13 +315,14 @@ namespace CiphersInterface
             this.btnReverse.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReverse.ForeColor = System.Drawing.Color.White;
             this.btnReverse.Location = new System.Drawing.Point(357, 244);
-            this.btnReverse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReverse.Margin = new System.Windows.Forms.Padding(4);
             this.btnReverse.Name = "btnReverse";
             this.btnReverse.Size = new System.Drawing.Size(96, 44);
             this.btnReverse.TabIndex = 19;
             this.btnReverse.Text = "Reverse";
             this.btnReverse.UseVisualStyleBackColor = false;
             this.btnReverse.Visible = false;
+            this.btnReverse.Click += new System.EventHandler(this.btnReverse_Click);
             // 
             // btnLettersOnly
             // 
@@ -329,7 +330,7 @@ namespace CiphersInterface
             this.btnLettersOnly.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLettersOnly.ForeColor = System.Drawing.Color.White;
             this.btnLettersOnly.Location = new System.Drawing.Point(211, 244);
-            this.btnLettersOnly.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLettersOnly.Margin = new System.Windows.Forms.Padding(4);
             this.btnLettersOnly.Name = "btnLettersOnly";
             this.btnLettersOnly.Size = new System.Drawing.Size(139, 44);
             this.btnLettersOnly.TabIndex = 20;
@@ -344,7 +345,7 @@ namespace CiphersInterface
             this.btnRemoveSpaces.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveSpaces.ForeColor = System.Drawing.Color.White;
             this.btnRemoveSpaces.Location = new System.Drawing.Point(43, 244);
-            this.btnRemoveSpaces.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRemoveSpaces.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemoveSpaces.Name = "btnRemoveSpaces";
             this.btnRemoveSpaces.Size = new System.Drawing.Size(167, 44);
             this.btnRemoveSpaces.TabIndex = 21;
@@ -380,7 +381,7 @@ namespace CiphersInterface
             this.Controls.Add(this.button1);
             this.Controls.Add(this.inputTextBoxCeasar);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CaesarForm";
             this.Text = "CaesarForm";
             ((System.ComponentModel.ISupportInitialize)(this.keySelector)).EndInit();
