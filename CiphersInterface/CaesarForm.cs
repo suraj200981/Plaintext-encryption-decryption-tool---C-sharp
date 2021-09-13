@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CiphersWindowsApp;
+using System.Text.RegularExpressions;
+
 
 namespace CiphersInterface
 {
@@ -146,6 +148,32 @@ namespace CiphersInterface
             //orignal string before text option modifications
             inputTextBoxCeasar.Text = undoInput;
 
+
+        }
+
+        private void btnLettersOnly_Click(object sender, EventArgs e)
+        {
+            //  [a-zA - Z]
+
+            StringBuilder sb = new StringBuilder();
+            int counts = 0;
+
+            Regex rx = new Regex("[a-zA - Z]",
+            RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
+            MatchCollection matches = rx.Matches(inputTextBoxCeasar.Text);
+
+            foreach (Match match in matches)
+            {
+
+                GroupCollection groups = match.Groups;
+                sb.Append(groups[0]);
+
+                counts++;
+
+            }
+
+            inputTextBoxCeasar.Text = sb.ToString();
 
         }
     }
