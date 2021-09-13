@@ -207,9 +207,27 @@ namespace CiphersInterface
 
         private void btn5Groups_Click(object sender, EventArgs e)
         {
+
+            btnRemoveSpaces.PerformClick();
+
             string str = inputTextBoxCeasar.Text;
 
-            for
+            string temp;
+
+            StringBuilder sb = new StringBuilder();
+
+            //split into groups
+            for (int i = 0; i < 5; i++)
+            {
+                temp = "";
+                for (int x = i; x < str.Length; x = x + 10)
+                {
+                    temp += str[x];
+                }
+                sb.Append(temp+" | ");
+            }
+
+            inputTextBoxCeasar.Text = sb.ToString();
         }
     }
     }
