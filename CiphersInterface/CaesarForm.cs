@@ -208,9 +208,21 @@ namespace CiphersInterface
         private void btn5Groups_Click(object sender, EventArgs e)
         {
 
-            btnRemoveSpaces.PerformClick();
+            int count = 0;
 
-            string str = inputTextBoxCeasar.Text;
+            btnRemoveSpaces.PerformClick();
+            string str;
+
+            if (count == 0)
+            {
+                str = inputTextBoxCeasar.Text;
+
+
+            }
+            else {
+
+                str = "poo";
+            }
 
             string temp;
 
@@ -228,6 +240,13 @@ namespace CiphersInterface
             }
 
             inputTextBoxCeasar.Text = sb.ToString();
+            count++;
+        }
+
+        private void btnOutputCopy_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Clipboard.SetText(outputText.Text);
+
         }
     }
     }

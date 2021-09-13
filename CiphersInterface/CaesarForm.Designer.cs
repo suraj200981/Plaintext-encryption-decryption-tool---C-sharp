@@ -209,6 +209,7 @@ namespace CiphersInterface
             this.btnOutputCopy.Text = "Copy";
             this.btnOutputCopy.UseVisualStyleBackColor = false;
             this.btnOutputCopy.Visible = false;
+            this.btnOutputCopy.Click += new System.EventHandler(this.btnOutputCopy_Click);
             // 
             // btnOutputTextOps
             // 
